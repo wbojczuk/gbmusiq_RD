@@ -65,11 +65,6 @@ export default function Navbar() {
         data.ref.current.classList.remove(styles.active)
       }
     })
-    if(window.scrollY > 50){
-      navbarAnimIn()
-    }else{
-      navbarAnimOut()
-    }
     if(["/", "/home"].includes(pathname) && !isOnTouch){
       isHomePage.current = true
       if(window.scrollY < 50){
@@ -94,6 +89,11 @@ export default function Navbar() {
     }
 
     window.addEventListener("scroll", ()=>{
+      if(["/", "/home"].includes(pathname)){
+        isHomePage.current = true
+      }else{
+        isHomePage.current = false
+      }
       if(window.scrollY > 50){
         navbarAnimIn()
       }else{
