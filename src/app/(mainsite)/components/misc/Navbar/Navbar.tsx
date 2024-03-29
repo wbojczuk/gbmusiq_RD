@@ -92,6 +92,11 @@ export default function Navbar() {
     }
 
     window.addEventListener("scroll", ()=>{
+      if(["/", "/home"].includes(pathRef.current)){
+        isHomePage.current = true
+      }else{
+        isHomePage.current = false
+      }
       if(window.scrollY > 50){
         navbarAnimIn()
       }else{
