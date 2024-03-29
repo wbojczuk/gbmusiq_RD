@@ -31,6 +31,7 @@ export default function Navbar() {
   const content2Ref: any = useRef()
   const topBarRef: any = useRef()
   const navRef: any = useRef()
+  const pathRef: any = useRef()
 
 
   // ****************** Add Current Page Triggers HERE ******************
@@ -56,6 +57,7 @@ export default function Navbar() {
   ]
 
   const pathname = usePathname()
+  
 
   useEffect(()=>{
     currentPageTriggers.forEach((data)=>{
@@ -74,6 +76,7 @@ export default function Navbar() {
       isHomePage.current = false
       navRef.current.classList.add(styles.animed)
     }
+    pathRef.current = pathname
   }, [pathname])
 
 
@@ -89,11 +92,6 @@ export default function Navbar() {
     }
 
     window.addEventListener("scroll", ()=>{
-      if(["/", "/home"].includes(pathname)){
-        isHomePage.current = true
-      }else{
-        isHomePage.current = false
-      }
       if(window.scrollY > 50){
         navbarAnimIn()
       }else{
