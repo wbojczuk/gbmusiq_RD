@@ -1,6 +1,7 @@
 .merch{
     position: relative;
     padding: var(--section-padding-top) 0;
+    background: var(--gradient-top);
 }
 
 .merch h2{
