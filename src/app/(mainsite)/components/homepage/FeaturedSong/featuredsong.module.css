@@ -1,0 +1,41 @@
+.featuredSong{
+    position: relative;
+    padding: var(--section-padding-top) 0;
+    background-color: #400D48;
+}
+
+.embedWrapper{
+    padding: 3vw 0;
+    width: 50%;
+    aspect-ratio: 2/1.1;
+
+}
+
+.featuredSong h2{
+    text-align: center;
+    font-size: 5rem;
+}
+
+.featuredSong h3{
+    text-align: center;
+    font-size: 4rem;
+}
+.linkWrapper{
+    margin-top: 3vw;
+}
+
+
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+
+}
+
+ /* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+
+}

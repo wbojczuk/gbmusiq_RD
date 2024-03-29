@@ -4,21 +4,25 @@
 }
 
 :root{
-  --primary-color: #D44B4B;
-  --primary-color-dark: #aa3d3d;
+  --primary-color: #6E0E7D;
   --secondary-color: #F6F6F6;
   --third-color: #F6F6F6;
   --disabled-grey: #c2c2c2;
+
+  --gradient-bottom: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(110,14,125,1) 100%);
+  --gradient-top: linear-gradient(180deg, rgba(110,14,125,1) 0%, rgba(0,0,0,1) 100%);
+  --gradient-right: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(110,14,125,1) 100%);
 
   /*
   ALREADY IMPORTED
   
   --primary-font: Roboto;
-  --secondary-font: Oswald;
+  
   */
+  --secondary-font: var(--primary-font);
 
-  --primary-text-color: black;
-  --secondary-text-color: white;
+  --primary-text-color: white;
+  --secondary-text-color: black;
 
   --section-padding: 4vw 0;
   --section-padding-top: 4vw;
@@ -27,6 +31,8 @@
 
 body{
   font-family: var(--primary-font);
+  background-color: black;
+  padding-top: 7vw;
   color: var(--primary-text-color);
   position: relative;
 }
@@ -75,7 +81,7 @@ body{
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: rgba(0,0,0,0.45);
+  background-color: rgba(0,0,0,0.55);
 }
 
 .center{

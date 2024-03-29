@@ -1,9 +1,9 @@
 .main-link{
   font-family: var(--primary-font);
-  font-weight: 700;
-  background-color: var(--primary-color-2);
+  font-weight: 500;
+  background-color: var(--primary-color);
   font-size: 1.5rem;
-  padding: 0.6vw 3.5vw;
+  padding: 0.8vw 4vw;
   color: var(--primary-text-color);
   text-decoration: none;
   overflow: hidden;
@@ -11,31 +11,23 @@
   cursor: pointer;
   display: inline-block;
   border: none;
+  transition: 0.3s transform;
 }
 
-.main-link::after{
-  content: '';
-  display: inline-block;
-  position: absolute;
-  z-index: 0;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.3);
-  transform: translateX(-110%);
-  transition: 0.4s transform;
+.main-link:hover{
+  transform: translateY(-2px);
 }
 
-.main-link:hover::after{
-  transform: translateX(0);
+.main-link-outline{
+  background-color: transparent;
+  border: 2px solid var(--primary-text-color);
 }
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
   .main-link{
     font-size: 1.6rem;
-    padding: 1vw 4vw;
+    padding: 1.2vw 4vw;
   }
   
 }
@@ -43,7 +35,7 @@
 /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
   .main-link{
-    font-size: 1.8rem;
-    padding: 1.4vw 10vw;
+    font-size: 2rem;
+    padding: 2.5vw 10vw;
   }
 }

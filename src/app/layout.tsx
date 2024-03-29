@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { Oswald, Roboto } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import Footer from './(mainsite)/components/misc/Footer/Footer';
 import Navbar from './(mainsite)/components/misc/Navbar/Navbar';
 import Script from 'next/script';
@@ -18,12 +18,11 @@ import AppWrapper from './shopify/AppWrapper';
 import Cart from './components/ShopifyComponents/Cart/Cart';
 
 
-const primaryFont = Roboto({ subsets: ['latin'], weight: ["100", "300", "400", "500", "900"], display: "swap", variable: "--primary-font" })
-const secondaryFont = Oswald({ subsets: ['latin'], weight: ["300", "500", "700"], display: "swap", variable: "--secondary-font" })
+const primaryFont = Montserrat({ subsets: ['latin'], weight: ["100", "300", "400", "500", "600", "700", "800", "900"], display: "swap", variable: "--primary-font" })
 
 export const metadata: Metadata = {
-  title: 'Template Site Title',
-  description: 'Template Site Desc'
+  title: 'GBMUSIQ | Gospel Music Artist',
+  description: 'GBMUSIQ | Gospel Music Artist | Simply Apostle'
 }
 
 export default function RootLayout({
@@ -33,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${primaryFont.variable} ${secondaryFont.variable}`}>
+      <body className={`${primaryFont.variable}`}>
 
       {(process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID != "0000000") && <><Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
       <Script id="google-analytics">

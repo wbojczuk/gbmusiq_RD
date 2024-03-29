@@ -7,6 +7,7 @@ interface optionProps {
     ref: any,
     url: string
     icon?: ReactNode,
+    target?:string,
     title: string
 }
 
@@ -14,7 +15,7 @@ interface optionProps {
 
   return (
     //@ts-ignore
-    <Link ref={parentRef} href={props.url} className={styles.navLink}>
+    <Link target={(props.target != undefined) ? props.target : "_self"} ref={parentRef} href={props.url} className={styles.navLink}>
               <li>
                 {(props.icon !== undefined) ? props.icon : <span className={styles.noIcon}></span>}
                 <span>{props.title}</span>

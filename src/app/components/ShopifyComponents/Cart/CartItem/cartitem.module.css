@@ -46,6 +46,7 @@
     -moz-appearance: textfield;
     appearance: textfield;
     border-radius: 0px;
+    background-color: black;
   }
   
   .numberInput input[type=number]::-webkit-inner-spin-button,

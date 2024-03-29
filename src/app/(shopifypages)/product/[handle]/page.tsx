@@ -1,6 +1,5 @@
 import {client} from "../../../shopify/shopifyStore"
 import ProductPage from "@/app/components/ShopifyComponents/ProductPage/ProductPage"
-import AppWrapper from "@/app/shopify/AppWrapper"
 import { Metadata } from "next"
 
 

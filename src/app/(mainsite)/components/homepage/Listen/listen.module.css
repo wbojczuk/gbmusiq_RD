@@ -1,0 +1,38 @@
+.listen{
+    position: relative;
+    padding: 2vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    gap: 2vw;
+}
+
+.listen svg{
+    width: 10vw;
+    height: 10vw;
+}
+
+.listen h2{
+    display: inline-block;
+    font-size: 4rem;
+    padding-right: 4vw;
+    margin-right: 4vw;
+    border-right: 6px solid var(--primary-text-color);
+}
+
+
+/* SMALL LAPTOP STYLES */
+@media only screen and (min-width: 991px) and (max-width: 1400px){
+
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 650px) and (max-width: 990px){
+
+}
+
+ /* MOBILE STYLES */
+@media only screen and (max-width: 649px){
+
+}
