@@ -212,11 +212,11 @@ export default function Navbar() {
           ref={aboutRef}
           />
 
-          <NavOption
-          title="Listen"
+          <a
+          className={styles.navLink}
           target="_blank"
-          url="/https://open.spotify.com/artist/3dLqBj8pQuDsyQMfFBJJZT?si=993xH0U7RYCmQHLk2LSDeQ"
-          />
+          href="https://open.spotify.com/artist/3dLqBj8pQuDsyQMfFBJJZT?si=993xH0U7RYCmQHLk2LSDeQ"
+          ><li><span className={styles.noIcon}></span><span>Listen</span></li></a>
 
           <NavOption
           title="Store"

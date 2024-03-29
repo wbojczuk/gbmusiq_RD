@@ -3,6 +3,10 @@
     padding: calc(var(--section-padding-top) * 10) 0 var(--section-padding-top) 0;
 }
 
+.logo{
+    display: none;
+}
+
 
 /* SMALL LAPTOP STYLES */
 @media only screen and (min-width: 991px) and (max-width: 1400px){
@@ -11,10 +15,26 @@
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
+    .header{
+        padding: calc(var(--section-padding-top) * 5) 0 calc(var(--section-padding-top) * 5) 0;
+    }
 
+    .logo{
+        display: inline-block;
+        position: relative;
+        top: -10vw
+    }
 }
 
  /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
-
+    .header{
+        padding: calc(var(--section-padding-top) * 5) 0 calc(var(--section-padding-top) * 5) 0;
+    }
+    .logo{
+        display: inline-block;
+        position: relative;
+        top: -15vw;
+        width: 80vw;
+    }
 }

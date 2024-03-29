@@ -32,10 +32,34 @@
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
-
+    .embedWrapper{
+        padding: 4.5vw 0;
+        width: 70%;
+    
+    }
+    .linkWrapper{
+        margin-top: 4.5vw;
+    }
+    
 }
 
  /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
-
+    .embedWrapper{
+        padding: 6vw 0;
+        width: 85%;
+    
+    }
+    .linkWrapper{
+        margin-top: 6vw;
+    }
+    .featuredSong h2{
+        text-align: center;
+        font-size: 4rem;
+    }
+    
+    .featuredSong h3{
+        text-align: center;
+        font-size: 3rem;
+    }
 }

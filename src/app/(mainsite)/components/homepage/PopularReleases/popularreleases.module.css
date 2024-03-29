@@ -22,10 +22,19 @@
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
-
+    .embedWrapper{
+        padding: 6vw 5%;
+        height: 50vw;
+    }
 }
 
  /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
-
+    .popularReleases h2{
+        font-size: 4rem;
+    }
+    .embedWrapper{
+        padding: 10vw 1%;
+        height: 90vw;
+    }
 }

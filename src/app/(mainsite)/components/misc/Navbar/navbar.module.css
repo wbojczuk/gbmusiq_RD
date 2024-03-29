@@ -238,8 +238,8 @@
         padding-left: 0.8vw;
     }
     .logoImg{
-        width: 12vw;
-        height: 5vw;
+        width: 38vw;
+        height: 11vw;
     }
     .content{
         padding-top: 1vw;
@@ -276,8 +276,10 @@
         padding: 0 !important;
     }
     .mainNav{
+        top:0;
         position: fixed;
         width: 100%;
+        background-color: black;
     }
 
     .topBar{
@@ -295,9 +297,11 @@
     }
 
     .navContent{
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
         width: 90%;
-        padding: 1vw 5%;
+        padding: 2vw 5%;
     }
     .navLink.active::after{
         width: 20%;

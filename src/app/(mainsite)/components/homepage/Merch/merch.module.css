@@ -45,10 +45,41 @@ font-size: 1.4rem;
 
 /* TABLET STYLES */
 @media only screen and (min-width: 650px) and (max-width: 990px){
-
+    .merchWrapper{
+        gap: 6vw;
+        padding: 8vw 0 12vw 0;
+    }
+    
+    .item{
+        width: 25%;
+    }
+    .item h4{
+        padding-top: 1.5vw;
+        }
+        
+        .price{
+            margin: 1.5vw 0;
+        }
 }
 
  /* MOBILE STYLES */
 @media only screen and (max-width: 649px){
-
+    .merchWrapper{
+        gap: 10vw;
+        padding: 10vw 0 16vw 0;
+        flex-direction: column;
+    }
+    
+    .item{
+        width: 60%;
+    }
+    .item h4{
+        padding-top: 2vw;
+        font-size: 1.6rem;
+        }
+        
+        .price{
+            margin: 2vw 0;
+            font-size: 1.4rem;
+        }
 }
