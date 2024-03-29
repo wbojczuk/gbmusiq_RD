@@ -65,7 +65,11 @@ export default function Navbar() {
         data.ref.current.classList.remove(styles.active)
       }
     })
-
+    if(window.scrollY > 50){
+      navbarAnimIn()
+    }else{
+      navbarAnimOut()
+    }
     if(["/", "/home"].includes(pathname) && !isOnTouch){
       isHomePage.current = true
       if(window.scrollY < 50){
