@@ -1,10 +1,24 @@
 .header{
     position: relative;
-    padding: calc(var(--section-padding-top) * 10) 0 var(--section-padding-top) 0;
+    padding: calc(var(--section-padding-top) * 5) 0 calc(var(--section-padding-top) * 5) 0;
 }
 
 .logo{
     display: none;
+}
+
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+    gap: 4vw;
+}
+
+.logoItem svg{
+    width: 4vw;
+    height: 4vw;
+    color: white;
 }
 
 
@@ -24,6 +38,15 @@
         position: relative;
         top: -10vw
     }
+    .logos{
+        margin-top: 3vw;
+        gap: 5vw;
+    }
+    
+    .logoItem svg{
+        width: 8vw;
+        height: 8vw;
+    }
 }
 
  /* MOBILE STYLES */
@@ -36,5 +59,14 @@
         position: relative;
         top: -15vw;
         width: 80vw;
+    }
+    .logos{
+        margin-top: 4vw;
+        gap: 5vw;
+    }
+    
+    .logoItem svg{
+        width: 12vw;
+        height: 12vw;
     }
 }
