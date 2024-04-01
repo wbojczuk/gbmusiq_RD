@@ -1,3 +1,10 @@
+interface eventType{
+    date: number,
+    location: string,
+    directions?: string,
+    time: string
+}
+
 interface productType{
     availableForSale: boolean,
     description: string,
