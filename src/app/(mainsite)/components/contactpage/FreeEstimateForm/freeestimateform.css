@@ -54,6 +54,7 @@
     border-bottom: 2px solid var(--primary-text-color);
     padding: 1.2vw 0;
     background-color: transparent;
+    color: var(--primary-text-color);
 }
 
 #estimateForm input::placeholder, #estimateForm textarea::placeholder{
