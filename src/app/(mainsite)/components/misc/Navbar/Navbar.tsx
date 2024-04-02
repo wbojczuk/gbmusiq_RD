@@ -45,10 +45,10 @@ export default function Navbar() {
       triggers: ["/contact"],
       ref: contactRef
     },
-    {
-      triggers: ["/products"],
-      ref: storeRef
-    },
+    // {
+    //   triggers: ["/products"],
+    //   ref: storeRef
+    // },
     {
       triggers: ["/", "/home"],
       ref: homeRef
@@ -225,11 +225,11 @@ export default function Navbar() {
           href="https://open.spotify.com/artist/3dLqBj8pQuDsyQMfFBJJZT?si=993xH0U7RYCmQHLk2LSDeQ"
           ><li><span className={styles.noIcon}></span><span>Listen</span></li></a>
 
-          <NavOption
+          {/* <NavOption
           title="Store"
           url="/products"
           ref={storeRef}
-          />
+          /> */}
 
           <NavOption
           title="Contact"

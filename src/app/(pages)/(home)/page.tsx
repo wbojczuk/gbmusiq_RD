@@ -14,7 +14,7 @@ export default function Home() {
       <Events />
       <Listen />
       <PopularReleases />
-      <Merch />
+      {/* <Merch /> */}
       <About />
       <FeaturedSong />
     </>

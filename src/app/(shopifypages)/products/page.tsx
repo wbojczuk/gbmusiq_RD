@@ -1,6 +1,7 @@
 import AppWrapper from "@/app/shopify/AppWrapper"
 import ProductListings from "@/app/components/ShopifyComponents/ProductListings/ProductListings"
 import { Metadata } from "next"
+import PageTitle from "@/app/(mainsite)/components/misc/PageTitle/PageTitle"
 
 export const metadata: Metadata = {
     title: 'Products',
@@ -9,6 +10,9 @@ export const metadata: Metadata = {
   
 export default function page() {
   return (
-        <ProductListings />
+        <>
+          <PageTitle title="Store" />
+          <ProductListings />
+        </>
   )
 }
