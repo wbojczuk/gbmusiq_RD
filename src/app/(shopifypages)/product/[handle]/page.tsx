@@ -7,7 +7,7 @@ import { Metadata } from "next"
 export async function generateMetadata({params}: {params: {handle: string}}): Promise<Metadata>{
   const productsData: productType = await client.product.fetchByHandle(params.handle)
   return {
-      title: `${productsData?.title}`,
+      title: `${productsData?.title} | GBMUSIQ`,
       description: productsData?.description,
       openGraph: {
           title: `${productsData?.title}`,

@@ -2,8 +2,8 @@ import AboutContent from "@/app/(mainsite)/components/aboutpage/AboutContent/Abo
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "About Page",
-    description: ""
+    title: "About | GBMUSIQ | Gospel Music Artist | Simply Apostle",
+    description: "About | GBMUSIQ | Gospel Music Artist | Simply Apostle"
 }
 
 export default function AboutPage(){
