@@ -8,7 +8,7 @@ const eventData: eventType[] = [
 {
     location: "St. Louis, MO",
     date: new Date("June 29, 2024").getTime(),
-    time: "TBA",
+    time: "6:00PM",
     directions: "https://maps.app.goo.gl/aw9jMX2SgYo1xFqD8"
 },
 {
