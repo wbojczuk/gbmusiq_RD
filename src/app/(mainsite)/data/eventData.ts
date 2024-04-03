@@ -1,6 +1,6 @@
 const eventData: eventType[] = [
 {
-    location: "Malcomb, IL",
+    location: "Macomb, IL",
     date: new Date("April 27, 2024").getTime(),
     time: "6:30PM",
     directions: "https://maps.app.goo.gl/s5vPiStQYyByWWjT7"
