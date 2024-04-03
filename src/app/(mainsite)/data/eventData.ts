@@ -1,19 +1,19 @@
 const eventData: eventType[] = [
 {
     location: "Malcomb, IL",
-    date: 1714168800000,
+    date: new Date("April 27, 2024").getTime(),
     time: "6:30PM",
     directions: "https://maps.app.goo.gl/s5vPiStQYyByWWjT7"
 },
 {
     location: "St. Louis, MO",
-    date: 1719612000000,
+    date: new Date("June 29, 2024").getTime(),
     time: "TBA",
     directions: "https://maps.app.goo.gl/aw9jMX2SgYo1xFqD8"
 },
 {
     location: "Champaign, IL",
-    date: 1724450400000,
+    date: new Date("August 24, 2024").getTime(),
     time: "TBA",
 }
 ]
